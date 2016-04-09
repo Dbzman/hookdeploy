@@ -2,8 +2,9 @@
   "apps": [
     {
       "name": "my first app",
+      "workingDir": "path/to/fancy",
       "deployKey": "3797d812c8c00a9320190f729de9fb21",
-      "deployScript": "path/to/fancy/deployscript.sh"
+      "deployScript": "deployscript.sh"
     }
   ]
 }
