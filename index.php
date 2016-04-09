@@ -14,7 +14,7 @@ if (is_string($currentDeployKey) && strlen($currentDeployKey) > 0) {
 
         if ($deployKey == $currentDeployKey) {
             $commandReturn = 0;
-            $output = system("cd $workingDir && $deployScript 2>&1", $commandReturn);
+            $output = system("cd $workingDir && ./$deployScript 2>&1", $commandReturn);
             if ($commandReturn === 0) {
                 echo "[deployment succeeded]";
             } else {
